@@ -6,8 +6,6 @@ Credit risk analytics project using Lending Club loan data to compare approval p
 
 This project analyses consumer loan applications from a credit-risk decisioning perspective. The workflow combines rule-based policy evaluation, borrower segmentation, and supervised default prediction to support approval, rejection, and manual-review decisions.
 
-The original analysis was developed for the Advanced Data Analysis module at Warwick Business School and has been cleaned into a portfolio-friendly GitHub version.
-
 ## Business Questions
 
 1. Which loan approval policy better reduces the risk of approving bad loans?
@@ -37,24 +35,6 @@ The original analysis was developed for the Advanced Data Analysis module at War
 - Built a PyTorch DNN and benchmarked it against logistic regression. Both achieved ROC-AUC around 0.67, showing that the simpler baseline was competitive on this structured tabular dataset.
 - Proposed a three-way decision policy: automatically approve low-risk applications, manually review mid-risk cases, and reject high-risk applications.
 
-## Repository Structure
-
-```text
-.
-├── README.md
-├── requirements.txt
-├── .gitignore
-├── docs
-│   ├── interview_notes.md
-│   └── project_summary.md
-├── outputs
-│   └── model_results_summary.csv
-└── src
-    ├── loan_policy_ab_testing.R
-    ├── borrower_clustering.R
-    └── loan_default_model.py
-```
-
 ## Data
 
 The dataset is based on Lending Club loan records. The full raw dataset is not included in this repository because of file size and redistribution considerations.
@@ -64,8 +44,6 @@ Expected local files:
 - `early_2012_2013_loan_sample_with_outcome.csv`
 - `df_clust.csv`
 
-Place data files in a local `data/` folder if you want to reproduce the workflow.
-
 ## Skills Demonstrated
 
 - R, Python, PyTorch, pandas, scikit-learn
@@ -74,10 +52,3 @@ Place data files in a local `data/` folder if you want to reproduce the workflow
 - Credit risk analytics
 - Model evaluation and threshold tuning
 - Business interpretation of statistical and machine learning outputs
-
-## Resume Version
-
-**Loan Default Risk Analytics Project | R, Python, PyTorch, Statistical Testing, Clustering**
-
-- Evaluated conservative vs aggressive loan approval policies on a 50,000-row Lending Club dataset, using false negative rate as the key risk metric and showing that the conservative policy reduced bad-loan approval risk from 42.2% to 0.6%.
-- Built borrower segmentation and default prediction workflows using R clustering and PyTorch, identifying three risk-based borrower segments and benchmarking a DNN against logistic regression with ROC-AUC around 0.67.
