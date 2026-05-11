@@ -1,5 +1,6 @@
 # Loan Default Risk Analytics
 [中文版本](README_zh.md) | English
+
 Credit risk analytics project using Lending Club loan data to compare approval policies, segment borrowers, and prototype default prediction models.
 
 ## Project Overview
